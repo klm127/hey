@@ -4,7 +4,9 @@
   "description": "language wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jas": "npx jasmine --config=spec/support/jasmine.json",
+    "test-all": "node tests/testAll.js"
   },
   "keywords": [
     "hey",
@@ -12,5 +14,8 @@
     "builder"
   ],
   "author": "klm127",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
 }
