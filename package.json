@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jas": "npx jasmine --config=spec/support/jasmine.json",
-    "test-all": "node tests/testAll.js"
+    "test-all": "node tests/testAll.js",
+    "doc": "npx jsdoc -c doc-configuration/jsdoc-config.json",
+    "open-docs": "start docs/index.html"
   },
   "keywords": [
     "hey",
@@ -16,6 +18,7 @@
   "author": "klm127",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^3.10.0"
+    "jasmine": "^3.10.0",
+    "jsdoc": "^3.6.7"
   }
 }

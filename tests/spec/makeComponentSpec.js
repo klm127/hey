@@ -29,9 +29,14 @@ describe('makeComponent suite', function() {
         let c2 = h.make('component').named('isla');
         c.add.child(c2);
         expect(c().children.length).toEqual(2);
-        let c3 = h.make('component').named('finn');
-        c2.add.sibling(c3);
-        expect(c().children.length).toEqual(3);
     });
+
+    it('should be able to attach siblings', function() {
+        let top = h.make('component').named('top');
+        let right = top.add.child().named('left').add.sibling().named('right');
+        expect(top._children.size).toEqual(2);
+        let bottom = right.add.child().named('bottom');
+        expect(bottom.get.grandparent()._children.size).toEqual(2);
+    })
 
 });
