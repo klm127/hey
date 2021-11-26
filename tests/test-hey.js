@@ -2,6 +2,12 @@ const hey = require('../lib/hey');
 
 console.log('hey', hey);
 
-hey('app');
+hey('app')
 
-console.log(hey);
+c = hey.make('component')
+
+console.log(hey.make('component'))
+
+console.log(
+    hey.make.component.with
+)
