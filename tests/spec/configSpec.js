@@ -31,5 +31,13 @@ describe('config suite', function() {
         c.print(print);
         expect(array.length).toBe(current_length+1);
         c.log.clear();
+    });
+
+    it('should be able to be called as a function', function() {
+        let c = hey('config');
+        c('log')('123');
+        c('log','123');
+        expect(c.config.logger.logLines.length).toEqual(2);
+        c.log.clear();
     })
 })
