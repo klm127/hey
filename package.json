@@ -8,7 +8,8 @@
     "jas": "npx jasmine --config=spec/support/jasmine.json",
     "test-all": "node tests/testAll.js",
     "doc": "npx jsdoc -c doc-configuration/jsdoc-config.json",
-    "open-docs": "start docs/index.html"
+    "open-docs": "start docs/index.html",
+    "test-html": "node tests/test-html.js"
   },
   "keywords": [
     "hey",

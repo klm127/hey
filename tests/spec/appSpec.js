@@ -5,6 +5,7 @@ describe('app suite', function() {
     var app = hey('app');
 
     it('should have a global circular reference', function() {
-        expect(app.global).toBeDefined();
+        expect(app.hey).toBeDefined();
+        expect(hey.app).toBeDefined();
     });
 })
