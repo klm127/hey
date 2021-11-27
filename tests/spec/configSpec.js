@@ -25,7 +25,8 @@ describe('config suite', function() {
         function print(val) {
             array.push(val);
         }
-        let c = hey('config').print(print);
+        let c = hey('config');
+        c.print(print);
         let current_length = c.config.logger.logLines.length;
         c.log('new');
         c.print(print);
