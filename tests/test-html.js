@@ -30,6 +30,13 @@ let highlight = {
     "font-size": "14px"
 }
 
+let pointerEnter = function(ev) {
+    ev.target.style.fontSize = "22px";
+}
+let pointerOut = function(ev) {
+    ev.target.style.fontSize = "10px";
+}
+
 let app = hey('app');
 
 let last = app.add.child().with.style(block)
@@ -39,11 +46,12 @@ let last = app.add.child().with.style(block)
         .with.child().of.type('ul')
 
 for(let k of ["dogs", "turtles","cats", "other stuff"]) {
-    last = last.add.child().with.content(">"+k)
+    last = last.add.child().with.content(">"+k).on.pointer.enter(pointerEnter).on.pointer.leave(pointerOut);
+    console.log(last());
 }
 
 last = last.get.parent().add.sibling().with.content("Something scaary")
-    .add.child().of.type('span').with.style(highlight).with.content(" WOOOOOO ")
+    .add.child().of.type('span').with.style(highlight).with.content(" WOOOOOO ");
 
 
 

@@ -3,43 +3,43 @@
     </head>
     <body>
 
-	<div id="[object Object]" style=border:4px dotted darkgray;box-shadow:2px 2px 2px black;padding:5px;">
+	<div id="component1" style=border:4px dotted darkgray;box-shadow:2px 2px 2px black;padding:5px;">
  		
  
-		<div id="[object Object]" style=color:darkslategray;font-size:22px;background-color:orange;">
+		<div id="component2" style=color:darkslategray;font-size:22px;background-color:orange;">
  			Isla's freaky webpage
  
 		</div>
 
-		<div id="[object Object]" style=border:4px dotted darkgray;box-shadow:2px 2px 2px black;padding:5px;">
+		<div id="component3" style=border:4px dotted darkgray;box-shadow:2px 2px 2px black;padding:5px;">
  			
  
-			<div id="[object Object]" style=color:maroon;font-size:16px;background-color:yellow;">
+			<div id="component4" style=color:maroon;font-size:16px;background-color:yellow;">
  				Some great content I made:
  
-				<ul id="[object Object]"">
+				<ul id="component5"">
  					
  
-					<div id="[object Object]"">
+					<div id="component6"">
  						>dogs
  
-						<div id="[object Object]"">
+						<div id="component7"">
  							>turtles
  
-							<div id="[object Object]"">
+							<div id="component8"">
  								>cats
  
-								<div id="[object Object]"">
+								<div id="component9"">
  									>other stuff
  
 								</div>
 
 							</div>
 
-							<div id="[object Object]"">
+							<div id="component10"">
  								Something scaary
  
-								<span id="[object Object]" style=background-color:goldenrod;font-size:14px;">
+								<span id="component11" style=background-color:goldenrod;font-size:14px;">
  									 WOOOOOO 
  
 								</span>
@@ -59,4 +59,31 @@
 	</div>
    </body>
 <script>
+
+// ------- dom events ------- 
+document.getElementById("component6").onpointerenter = function(ev) {
+    ev.target.style.fontSize = "22px";
+};
+document.getElementById("component6").onpointerleave = function(ev) {
+    ev.target.style.fontSize = "10px";
+};
+document.getElementById("component7").onpointerenter = function(ev) {
+    ev.target.style.fontSize = "22px";
+};
+document.getElementById("component7").onpointerleave = function(ev) {
+    ev.target.style.fontSize = "10px";
+};
+document.getElementById("component8").onpointerenter = function(ev) {
+    ev.target.style.fontSize = "22px";
+};
+document.getElementById("component8").onpointerleave = function(ev) {
+    ev.target.style.fontSize = "10px";
+};
+document.getElementById("component9").onpointerenter = function(ev) {
+    ev.target.style.fontSize = "22px";
+};
+document.getElementById("component9").onpointerleave = function(ev) {
+    ev.target.style.fontSize = "10px";
+};
+
 //script will go here</script></html>
