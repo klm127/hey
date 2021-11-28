@@ -9,7 +9,8 @@
     "test-all": "node tests/testAll.js",
     "doc": "npx jsdoc -c doc-configuration/jsdoc-config.json",
     "open-docs": "start docs/index.html",
-    "test-html": "node tests/test-html.js"
+    "test-html": "node tests/test-html.js",
+    "repl": "node tests/repl.js"
   },
   "keywords": [
     "hey",
